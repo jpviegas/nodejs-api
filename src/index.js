@@ -27,5 +27,5 @@ app.get('/todos', async (_req,res)=>{
 mongoose.connect(MONGO_URL ?? '',
 ).then(() => {
   console.log(`on port ${port}`);
-  app.listen(process.env.PORT || port);
+  app.listen(process.env.PORT);
 });
